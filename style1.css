@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.carousel-item{
+  height: 600px;
+}
+
+.carousel-image-1{
+  background-image: url('https://cdn.pixabay.com/photo/2021/05/24/13/15/cake-6279252_1280.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-image-2{
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/30/10/30/plum-cake-3641849_1280.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-image-3{
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/23/14/37/baked-goods-1853261_960_720.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
